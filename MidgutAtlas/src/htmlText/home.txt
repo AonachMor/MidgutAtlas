@@ -1,0 +1,12 @@
+
+<div class="explanation"><!-- external text starts here -->
+This facility allows you to explore how genes are expressed in the five different regions of the midgut of larvae of <em>Drosophila melanogaster</em>. It is based on RNA sequencing data from the laboratory of Julian Dow in the University of Glasgow.
+<h3>GENE & DIFFERENTIAL</h3> 
+Results are presented in two forms. In the ‘Gene’ section one can find midgut expression data for all genes in release 6 of the Drosophila genome assembly. In the ‘Differential’ section are listed those genes that are differentially expressed (by at least a factor of two) in one section of the midgut of Drosophila larvae.
+<h3>WHICH TRANSCRIPTS ARE VALID?</h3> 
+In this study polyA-containing RNA was selected, so that one would only expect transcripts from protein-coding genes. However the Tuxedo pipeline analysis identified several non-coding RNAs. We believe that these are artifacts and do not include them in the ‘Differential’ section. We felt it better to retain them in the ‘Gene’ section, but strongly suggest that in these cases users consider the replication of values and examine the original reads in the UCSC Genome Browser through the link provided.
+<h3>FPKM</h3> 
+Expression of RNA is quantified in terms of FPKM, Fragments Per Kilobase of transcript per Million mapped reads. Differentially expressed genes are only listed where FPKM values are greater than 2, and this also is used for the ‘white’ baseline in the colour-coding.
+<h3>SVG</h3> 
+Diagrams in these web pages are in the scalable vector graphic (SVG) format. The ‘Save as SVG’ button allows them to be exported for editing in an application like Adobe Illustrator (used by professional graphics units) or Inkscape (free) after which they can be saved in a suitable form and at a suitable resolution for publication etc.
+</div><!-- end of external text-->

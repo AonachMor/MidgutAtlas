@@ -1,0 +1,406 @@
+/* FlyGutAtlas.css 01.02.2016 */
+
+/*---- Fix for scroll-bar bug ----*/
+html
+{
+	min-height: 100%; 
+	margin-bottom: 1px;
+}
+
+/*-- centred padding top needed for IE6 ---*/
+body
+{
+	color: #000000; background-color: #ffffff;
+	min-width: 750px;
+	margin-top: 0px; margin-bottom: 0px;
+	padding-top: 20px; padding-bottom: 15px;
+}
+
+h1 
+{
+	text-align: center;
+	font-family: "Arial", sans-serif;
+	color: #003050;
+	font-size: 250%;
+	padding: 0px;
+	margin-bottom: 0px;
+	background-image: url(../images/BGimage.jpg);
+	background-repeat: no-repeat;
+	background-position: 200px -20px;
+	height: 85px;
+}
+
+h2
+{
+	text-align: center;
+	font-family: "Arial", sans-serif;
+	color: #003050;
+	font-size: 125%;
+}
+
+/* h2 link text: active and inactive */
+h2 .active 
+{
+	color: 003050;
+	text-decoration: none;
+	padding-right: 10px; padding-left: 10px;
+}
+
+h2 .inactive 
+{
+	color: #000000;
+	text-decoration: none;
+	padding-right: 10px; padding-left: 10px;
+}
+
+h3 
+{
+	font: 16px Arial, Verdana, Helvetica, sans-serif;
+	color: #000000; background-color: #ffffff;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+
+/*------- para No indent --------*/
+p
+{
+	font-size:12px; 
+	text-align: left; 
+	line-height: 150%; 
+	text-indent:0px;
+	margin-bottom: 12px; margin-top: 12px;
+}
+
+a
+{
+	color:#235282;
+	text-decoration:none;
+}
+
+a:visited
+{
+	color:#235282;
+	text-decoration:none;
+}
+
+a:hover
+{
+	color: #486ca0; background-color: transparent;
+	outline: none; text-decoration: none;
+}
+
+
+a:active
+{
+	color:#6586a7;
+	text-decoration:none;
+}
+
+img
+{
+	border: 0px solid white;
+}
+
+button
+{
+	margin-left: 20px;
+}
+
+/* Centred 750px wrapper (pos relative removed for autocomplete) */
+#wrapper 
+{
+	background-color: #ffffff;
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;	
+	border: 2px solid #003050;
+	border-radius: 10px;
+	padding-right: 20px; padding-left: 20px;
+	padding-bottom: 20px; padding-top: 0px;
+}
+
+/* Wrap controls in grey rectangle */
+#controls
+{
+	font: 12px "Verdana", "Helvetica", "Arial", sans-serif;
+	text-align: left; line-height: 150%;
+	border: 1px solid #2d5571;
+	border-radius: 10px;
+	padding-left: 20px; padding-right: 20px;
+	padding-top: 10px; padding-bottom: 10px;
+}
+
+/* Explanation etc - larger than rest of text */
+.explanation
+{
+	font: 14px Verdana, Helvetica, Arial, sans-serif;
+	text-align: left; line-height: 150%;
+	padding-left: 20px; padding-right: 20px;
+	padding-top: 20px; padding-bottom: 10px;
+}
+
+.explanation p
+{
+	text-indent: 20px; line-height: 120%;
+	margin-bottom: 0px;
+}
+
+.explanation a
+{
+	color:#235282;
+	text-decoration:none;
+}
+
+.ambiguity
+{
+	font: 14px Verdana, Helvetica, Arial, sans-serif;
+	text-align: left; line-height: 150%;
+	padding-left: 0px; padding-right: 0px;
+	padding-top: 5px; padding-bottom: 10px;
+	clear:both;
+}
+
+.clearer
+{
+	clear:both;
+}
+
+/* drop-down auto-suggest 'menu' - z puts in front of bar graphs etc */
+#popup
+{
+	z-index: 10;
+}
+
+/* changed from id because of multiple instances */
+.results 
+{
+	font: 12px "Verdana", "Helvetica", "Arial", sans-serif;
+	text-align: left; line-height: 150%;
+	border: 1px solid #2d5571;
+	border-radius: 10px;
+	padding-left: 20px; padding-right: 20px;
+	padding-top: 10px; padding-bottom: 10px;
+}
+
+.leftPadSelect
+{
+	padding-left: 50px;
+}
+
+.rightPadGene
+{
+	padding-right: 5px;
+}
+
+/* for holding gene info */
+
+.geneInfo 
+{
+	float: left;
+	text-align: left;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+.infoCaption
+{
+	font-weight: bold;
+	color: #666666;
+	font-size: 9px;
+	line-height: 110%;
+}
+
+.infoContent
+{
+	font-weight: bold;
+	color: #333333;
+	padding-left: 10px;
+	line-height: 110%;
+}
+
+/* for non-initial input label, providing stand-off to left and right and float as controls re-adjust*/
+.lableft
+{
+	margin-left: 15px;
+	margin-right: 4px;
+}
+
+/* hide/show ids */
+#visible
+{
+}
+
+#hideme p
+{
+	text-align:center;
+}
+
+/* svg wrapper */
+#svg
+{
+	text-align:center;	
+}
+
+
+/* this style is applied to div enclosing transcript results tables */
+.feedback 
+{
+	margin-top: 6px;
+	width: 100%;
+	border-collapse: collapse;
+	font-family: "Arial", sans-serif;
+	background-color: #ffffff;
+	font-size: 14px;
+}
+
+/* right align table cells as default */
+table.feedback 
+{
+	table-layout: fixed;
+	text-align: right;
+	border: 1px solid #E6FFF5;
+	background-color: #ffffff;
+}
+
+/* center th cells as default */
+.feedback th 
+{
+	width: 17%;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	color: #ffffff; 
+	background-color: #666666;
+	border: 1px solid #999999;
+	border-top: 1px solid #999999;
+}
+
+/* last th cell has stronger right border */
+.feedback tr th:nth-child(7)
+{
+	border-right: 1px solid #999999;
+}
+
+.feedback tr td:nth-child(2)
+{
+	border-right: 2px solid #999999;
+}
+
+.feedback tr th:nth-child(2)
+{
+	border-right: 2px solid #999999;
+}
+
+/* right pad td cells as default */
+.feedback td
+{
+	padding-top: 3px; padding-bottom: 3px;
+	padding-left: 20px; padding-right: 20px;
+	border: 1px solid #999999;
+	background-color: #eeeeee;
+}
+
+/* first and second column of td cells has left-align and left pad */
+.feedback tr > td:first-child 
+{
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 3px;
+}
+.feedback tr > td:nth-child(2)
+{
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 3px;
+}
+
+/* this style is applied to div enclosing *replicate* results tables */
+.feedbackR
+{
+	margin-top: 6px;
+	width: 100%;
+	border-collapse: collapse;
+	font-family: "Arial", sans-serif;
+	background-color: #ffffff;
+	font-size: 12px;
+}
+
+/* right align table cells as default */
+table.feedbackR 
+{
+	table-layout: fixed;
+	text-align: right;
+	border: 1px solid #E6FFF5;
+	background-color: #ffffff;
+	border-bottom: 2px solid #999999;
+}
+
+/* center th cells as default */
+.feedbackR th 
+{
+	width: 17%;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	color: 000000; 
+	background-color: #ffffff;
+	border: 1px solid #999999;
+	border-top: 2px solid #999999;
+	border-bottom: 2px solid #999999;
+}
+
+/* right pad td cells as default */
+.feedbackR td
+{
+	padding-top: 3px; padding-bottom: 3px;
+	padding-left: 20px; padding-right: 20px;
+	border: 1px solid #999999;
+	background-color: #ffffff;
+}
+
+/* first and last column of td cells has left-align and left pad */
+.feedbackR tr > td:first-child 
+{
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 3px;
+}
+.feedbackR tr > td:nth-child(7)
+{
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 3px;
+}
+
+/* apply stronger borders where necessary */
+
+.feedbackR tr td:nth-child(1)
+{
+	border-right: 2px solid #999999;
+	border-left: 2px solid #999999;
+}
+
+.feedbackR tr th:nth-child(1)
+{
+	border-right: 2px solid #999999;
+	border-left: 2px solid #999999;
+}
+
+.feedbackR tr td:nth-child(4)
+{
+	border-right: 2px solid #999999;
+}
+
+.feedbackR tr th:nth-child(4)
+{
+	border-right: 2px solid #999999;
+}
+
+.feedbackR tr td:nth-child(7)
+{
+	border-right: 2px solid #999999;
+}
+
+.feedbackR tr th:nth-child(7)
+{
+	border-right: 2px solid #999999;
+}
